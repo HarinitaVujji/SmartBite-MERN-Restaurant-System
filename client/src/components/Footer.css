@@ -1,0 +1,222 @@
+/* ============= SMARTBITE FOOTER ============= */
+
+.sb-footer {
+  background: #111111;
+  color: #f8f8f8;
+  padding: 50px 40px 24px;
+  margin-top: 60px;
+}
+
+.sb-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 32px;
+}
+
+/* ---------- Columns ---------- */
+
+.sb-footer-col h3,
+.sb-footer-col h4 {
+  margin-bottom: 12px;
+  color: #ffb020;
+  font-size: 1.1rem;
+}
+
+.sb-footer-col p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.sb-footer-col.brand p {
+  max-width: 340px;
+}
+
+/* links */
+
+.sb-footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sb-footer-col ul li {
+  margin: 6px 0;
+}
+
+.sb-footer-col ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.sb-footer-col ul li a:hover {
+  color: #ffb020;
+  transform: translateX(4px);
+}
+
+/* ---------- Social Icons ---------- */
+
+.sb-footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sb-footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+
+/* individual brand colors on hover */
+.sb-footer-social a.social-ig:hover {
+  background: #e1306c; /* Instagram */
+  color: #fff;
+}
+
+.sb-footer-social a.social-tw:hover {
+  background: #1da1f2; /* Twitter/X */
+  color: #fff;
+}
+
+.sb-footer-social a.social-fb:hover {
+  background: #1877f2; /* Facebook */
+  color: #fff;
+}
+
+.sb-footer-social a.social-yt:hover {
+  background: #ff0000; /* YouTube */
+  color: #fff;
+}
+
+.sb-footer-social a.social-wa:hover {
+  background: #25d366; /* WhatsApp */
+  color: #fff;
+}
+
+.sb-footer-social a:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ---------- Newsletter ---------- */
+
+.sb-footer-col.newsletter p {
+  margin-bottom: 10px;
+}
+
+.sb-footer-newsletter-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.sb-footer-newsletter-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid #444;
+  background: #181818;
+  color: #f8f8f8;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sb-footer-newsletter-form input[type="email"]::placeholder {
+  color: #999;
+}
+
+.sb-footer-newsletter-form input[type="email"]:focus {
+  border-color: #ffb020;
+  box-shadow: 0 0 0 1px rgba(255, 176, 32, 0.4);
+}
+
+.sb-footer-newsletter-form button {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 16px;
+  background: #ffb020;
+  color: #111;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sb-footer-newsletter-form button:hover {
+  background: #ffd056;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.sb-footer-newsletter-note {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #bbbbbb;
+}
+
+/* ---------- Bottom Bar ---------- */
+
+.sb-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 28px;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #bbbbbb;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .sb-footer {
+    padding: 32px 18px 20px;
+  }
+
+  .sb-footer-inner {
+    gap: 24px;
+  }
+
+  .sb-footer {
+    text-align: left;
+  }
+
+  .sb-footer-social {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 580px) {
+  .sb-footer {
+    text-align: center;
+  }
+
+  .sb-footer-social {
+    justify-content: center;
+  }
+
+  .sb-footer-newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sb-footer-newsletter-form button {
+    width: 100%;
+  }
+}
