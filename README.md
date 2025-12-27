@@ -49,4 +49,4 @@ SmartBite/
 │ ├── server.js
 │ └── package.json
 ├── README.md
-├── .gitignore
+└── .gitignore
