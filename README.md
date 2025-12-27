@@ -37,7 +37,8 @@ It allows users to browse menus, add food items to cart, order online, reserve d
 ---
 
 ## Project Structure
-```SmartBite/
+```
+SmartBite/
 ├── client/ # React.js Frontend
 │ ├── src/
 │ ├── public/
@@ -49,4 +50,5 @@ It allows users to browse menus, add food items to cart, order online, reserve d
 │ ├── server.js
 │ └── package.json
 ├── README.md
-└── .gitignore```
+└── .gitignore
+```
